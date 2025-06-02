@@ -1,10 +1,15 @@
-// import files and packages up here
 const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => res.send('Express on Vercel'));
+
+app.listen(3000, () => console.log('Server ready on port 3000'));
+
+// import files and packages up here
 const morgan = require('morgan')
-const data = require('./data.json')
+const data = require('./server/data.json')
 
 // create your express server below
-var app = express();
 
 // add your routes and middleware below
 app.use(morgan('dev'));
