@@ -7,7 +7,7 @@ app.listen(3000, () => console.log('Server ready on port 3000'));
 
 // import files and packages up here
 const morgan = require('morgan')
-const data = require('./server/data.json')
+const data = require('../server/data.json')
 
 // create your express server below
 
